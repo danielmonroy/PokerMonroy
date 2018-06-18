@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Game date:</strong>
+  <%= @poker_game.game_date %>
+</p>
+
+<p>
+  <strong>Home:</strong>
+  <%= @poker_game.home %>
+</p>
+
+<p>
+  <strong>Type:</strong>
+  <%= @poker_game.type %>
+</p>
+
+<p>
+  <strong>Fee:</strong>
+  <%= @poker_game.fee %>
+</p>
+
+<%= link_to 'Edit', edit_poker_game_path(@poker_game) %> |
+<%= link_to 'Back', poker_games_path %>

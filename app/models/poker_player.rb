@@ -1,0 +1,2 @@
+class PokerPlayer < ApplicationRecord
+end
