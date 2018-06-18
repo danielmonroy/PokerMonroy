@@ -1,24 +1,9 @@
-# README
+# POKER MONROY
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Every 15 days my family reunites on friday to play poker. It's a tradition that have lasted more than 10 years now, so we have a very long history of scores, champions and money gained.
 
-Things you may want to cover:
+My intention with this app is to have a source for reference and consult of previous games and table positions.
 
-* Ruby version
+I will code sections for checking previous games, by player, host home, day, month or year. Another section for register participants and for create the events.
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+My goal is to have this finished by the first days of July, 2018.
