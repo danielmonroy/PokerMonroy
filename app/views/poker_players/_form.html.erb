@@ -13,20 +13,24 @@
 
   <div class="field">
     <%= form.label :name %>
-    <%= form.text_field :name, id: :poker_player_name %>
+    <%= form.text_field :name, id: :poker_player_name, class:"form-control" %>
+    <br>
   </div>
 
   <div class="field">
     <%= form.label :nickname %>
-    <%= form.text_field :nickname, id: :poker_player_nickname %>
+    <%= form.text_field :nickname, id: :poker_player_nickname, class:"form-control" %>
+    <br>
   </div>
 
   <div class="field">
     <%= form.label :title %>
-    <%= form.text_field :title, id: :poker_player_title %>
+    <%= form.text_field :title, id: :poker_player_title, class:"form-control" %>
+    <br>
   </div>
 
   <div class="actions">
-    <%= form.submit %>
+    <%= form.submit "Registrar pokarista", class:"btn btn-success" %>
   </div>
+  <br>
 <% end %>

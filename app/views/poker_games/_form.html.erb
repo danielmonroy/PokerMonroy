@@ -13,25 +13,26 @@
 
   <div class="field">
     <%= form.label :game_date %>
-    <%= form.datetime_select :game_date, id: :poker_game_game_date %>
+    <%= form.datetime_select :game_date, id: :poker_game_game_date, class:"form-control" %>
   </div>
-
+  <br>
   <div class="field">
     <%= form.label :home_id %>
-    <%= form.text_field :home_id, id: :poker_game_home_id %>
+    <%= form.text_field :home_id, id: :poker_game_home_id, class:"form-control" %>
   </div>
-
+  <br>
   <div class="field">
     <%= form.label :type %>
-    <%= form.text_field :type, id: :poker_game_type %>
+    <%= form.text_field :type, id: :poker_game_type, class:"form-control" %>
   </div>
-
+  <br>
   <div class="field">
     <%= form.label :fee %>
-    <%= form.text_field :fee, id: :poker_game_fee %>
+    <%= form.text_field :fee, id: :poker_game_fee, class:"form-control" %>
   </div>
-
+  <br>
   <div class="actions">
-    <%= form.submit %>
+    <%= form.submit 'Registrar juego de Poker', class:'btn btn-primary' %>
   </div>
+  <br>
 <% end %>

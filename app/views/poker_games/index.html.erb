@@ -1,33 +1,39 @@
-<p id="notice"><%= notice %></p>
+<div class="row">
+  <div class="col-md-12">
 
-<h1>Poker Games</h1>
+    <p id="notice"><%= notice %></p>
 
-<table>
-  <thead>
-    <tr>
-      <th>Game date</th>
-      <th>Home</th>
-      <th>Type</th>
-      <th>Fee</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
+    <h1>Poker Games</h1>
 
-  <tbody>
-    <% @poker_games.each do |poker_game| %>
-      <tr>
-        <td><%= poker_game.game_date %></td>
-        <td><%= poker_game.home %></td>
-        <td><%= poker_game.type %></td>
-        <td><%= poker_game.fee %></td>
-        <td><%= link_to 'Show', poker_game %></td>
-        <td><%= link_to 'Edit', edit_poker_game_path(poker_game) %></td>
-        <td><%= link_to 'Destroy', poker_game, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Game date</th>
+          <th>Home</th>
+          <th>Type</th>
+          <th>Fee</th>
+          <th colspan="3"></th>
+        </tr>
+      </thead>
 
-<br>
+      <tbody>
+        <% @poker_games.each do |poker_game| %>
+        <tr>
+          <td><%= poker_game.game_date %></td>
+          <td><%= poker_game.home %></td>
+          <td><%= poker_game.type %></td>
+          <td><%= poker_game.fee %></td>
+          <td><%= link_to 'Show', poker_game %></td>
+          <td><%= link_to 'Edit', edit_poker_game_path(poker_game) %></td>
+          <td><%= link_to 'Destroy', poker_game, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        </tr>
+        <% end %>
+      </tbody>
+    </table>
 
-<%= link_to 'New Poker Game', new_poker_game_path %>
+    <br>
+
+    <%= link_to 'New Poker Game', new_poker_game_path %>
+
+  </div>
+</div>

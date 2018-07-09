@@ -1,19 +1,9 @@
-<p id="notice"><%= notice %></p>
+<div class="row">
+  <div class="col-md-12">
+    <h1><%= @poker_player.name %> <small>"<%= @poker_player.nickname %>" <br><%= @poker_player.title %></small></h1>
+    <br>
 
-<p>
-  <strong>Name:</strong>
-  <%= @poker_player.name %>
-</p>
-
-<p>
-  <strong>Nickname:</strong>
-  <%= @poker_player.nickname %>
-</p>
-
-<p>
-  <strong>Title:</strong>
-  <%= @poker_player.title %>
-</p>
-
-<%= link_to 'Edit', edit_poker_player_path(@poker_player) %> |
-<%= link_to 'Back', poker_players_path %>
+    <%= link_to 'Edit', edit_poker_player_path(@poker_player) %> |
+    <%= link_to 'Back', poker_players_path %>
+  </div>
+</div>
